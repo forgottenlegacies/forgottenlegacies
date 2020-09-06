@@ -1,0 +1,145 @@
+/***** General Formatting *****/
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Varela Round', sans-serif;
+}
+body {
+	width: 100%;
+	height: auto;
+	background-image: url(../images/videos.jpg);
+	background-attachment: fixed;
+}
+
+/***** Navigation Menu *****/
+
+.navbar {
+	border-bottom: 3px solid #0051db;
+}
+.navbar-nav li {
+	padding: 0px 20px;
+}
+.navbar-nav li a {
+	padding: 15px;
+	font-size: 18px;
+	color: white!important;
+}
+.navbar-nav li:hover {
+	background: #0051db;
+	transition: .2s;
+	border-radius: 3px;
+}
+.navbar-nav li.active {
+	background: #0051db;
+	border-radius: 3px;
+}
+.navbar-brand img {
+	width: 50px;
+	height: 50px;
+}
+
+/***** Media Section *****/
+
+.project-card {
+	width: 100%;
+	height: auto;
+	color: white;
+	padding-top: 2rem;
+	background: rgba(37, 37, 37, 0); /* can't figure out how to get rid of small white line so this makes it invisible*/
+}
+.project-card .media {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 43%;
+	height: 450px;
+}
+@media only screen and (max-width: 800px) { /* ipad */
+	.project-card .media {
+		width: 100%;
+	}
+}
+.project-card .media iframe {
+	width: 100%;
+	height: 100%;
+}
+.project-card .media img {
+	width: 100%;
+	height: 100%;
+
+}
+
+/***** Info Section *****/
+
+.info1, .info2, .info3, .info4 {
+	display: inline-block;
+	position: absolute;
+	width: 57%;
+	height: 450px;
+	padding: 4rem;
+	overflow: auto;
+}
+@media only screen and (max-width: 800px) { /* ipad */
+	.info1, .info2, .info3, .info4 {
+		width: 100%;
+		position: relative;
+	}
+}
+.info1 h2, .info2 h2, .info3 h2, .info4 h2 {
+	font-size: 3rem;
+}
+.info1 p, .info2 p, .info3 p, .info4 p {
+	font-size: 1.3rem;
+	padding-bottom: 1rem;
+}
+.info1 {
+	background: linear-gradient(rgba(0, 12, 80, 0.8),rgba(4, 0, 255, 0.8)), url(../images/project_texture.jpg);
+}
+.info2 {
+	background: linear-gradient(rgba(255, 24, 82, 0.8),rgba(241, 108, 46, 0.8)), url(../images/project_texture.jpg);
+}
+.info3 {
+	background: linear-gradient(rgba(126, 25, 25, 0.8),rgba(196, 0, 0, 0.8)), url(../images/project_texture.jpg);
+}
+.info4 {
+	background: linear-gradient(rgba(87, 0, 90, 0.8),rgba(61, 0, 85, 0.8)), url(../images/project_texture.jpg);
+}
+.info2 a {
+	color: white;
+	background: rgb(255, 81, 0);
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 3px;
+	transition: .2s;
+	font-size: 1.3rem;
+}
+.info2 a:hover {
+	color: rgb(255, 81, 0);
+	background: white;
+}
+.info3 a {
+	color: white;
+	background: rgb(65, 0, 0);
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 3px;
+	transition: .2s;
+	font-size: 1.3rem;
+}
+.info3 a:hover {
+	color: rgb(65, 0, 0);
+	background: white;
+}
+.info4 a {
+	color: white;
+	background: #29003a;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 3px;
+	transition: .2s;
+	font-size: 1.3rem;
+}
+.info4 a:hover {
+	color: #29003a;
+	background: white;
+}

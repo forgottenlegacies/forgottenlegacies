@@ -1,0 +1,130 @@
+/***** General Formatting *****/
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Varela Round', sans-serif;
+}
+body {
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(rgba(255,255,255,0.5),rgba(20,20,20,0.5)), url(../images/videos.jpg);
+	background-attachment: fixed;
+}
+
+/***** Navigation Menu *****/
+
+.navbar {
+	border-bottom: 3px solid #0051db;
+}
+.navbar-nav li {
+	padding: 0px 20px;
+}
+.navbar-nav li a {
+	padding: 15px;
+	font-size: 18px;
+	color: white!important;
+}
+.navbar-nav li:hover {
+	background: #0051db;
+	transition: .2s;
+	border-radius: 3px;
+}
+.navbar-nav li.active {
+	background: #0051db;
+	border-radius: 3px;
+}
+.navbar-brand img {
+	width: 50px;
+	height: 50px;
+}
+
+/***** Titles *****/
+.playlist-title h1, .popular-title h1, .stream-title h1 {
+	margin-left: 4rem;
+	font-size: 4rem;
+	color: #0051db;
+	text-shadow: 2px 2px 5px black;
+}
+
+/***** Streams *****/
+
+.stream-container {
+	width: 100%;
+	padding-top: 4rem;
+	background-image: linear-gradient(rgba(20,20,20,0.2),rgba(20,20,20,0.2))
+}
+.stream-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 4rem;
+	text-align: center;
+	font-size: 4vh;
+	padding: 4rem;
+}
+@media only screen and (max-width: 414px) { /* iphone+ */
+	.stream-section {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		padding: 2rem;
+	}
+}
+.stream-section iframe {
+	width: 100%;
+	height: 450px;
+	box-shadow: 7px 7px 12px black;
+}
+@media only screen and (max-width: 414px) { /* iphone+ */
+	.stream-section iframe {
+		height: 250px;
+	}
+}
+.stream-section .info {
+	padding-top: 2rem;
+	color: white;
+	font-size: 25px;
+}
+.stream-section iframe:hover {
+	transform: scale(1.01);
+	transition-duration: 200ms;
+}
+
+/***** Playlist/Popular *****/
+
+.playlist-container {
+	width: 100%;
+	padding-top: 4rem;
+	background-image: linear-gradient(rgba(20,20,20,0.2),rgba(20,20,20,0.2))
+}
+.popular-container {
+	width: 100%;
+	padding-top: 4rem;
+	background-image: linear-gradient(rgba(20,20,20,0.4),rgba(20,20,20,0.4))
+}
+.playlist-section, .popular-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 2rem;
+	text-align: center;
+	font-size: 4vh;
+	padding: 4rem;
+}
+@media only screen and (max-width: 800px) {
+	.playlist-section, .popular-section {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		padding: 2rem;
+	}
+}
+.playlist-section iframe, .popular-section iframe {
+	width: 100%;
+	height: 250px;
+	box-shadow: 7px 7px 12px black;
+}
+.playlist-section .info, .popular-section .info {
+	padding-top: 2rem;
+	color: white;
+	font-size: 25px;
+}
+.playlist-section iframe:hover, .popular-section iframe:hover {
+	transform: scale(1.01);
+	transition-duration: 200ms;
+}

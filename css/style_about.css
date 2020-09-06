@@ -1,0 +1,76 @@
+/***** General Formatting *****/
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Varela Round', sans-serif;
+}
+body {
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(rgba(0, 60, 255, 0.4),rgba(8, 115, 255, 0.4)), url(../images/body.jpg);
+	background-attachment: fixed;
+}
+
+/***** Navigation Menu *****/
+
+.navbar {
+	border-bottom: 3px solid #0051db;
+}
+.navbar-nav li {
+	padding: 0px 20px;
+}
+.navbar-nav li a {
+	padding: 15px;
+	font-size: 18px;
+	color: white!important;
+}
+.navbar-nav li:hover {
+	background: #0051db;
+	transition: .2s;
+	border-radius: 3px;
+}
+.navbar-nav li.active {
+	background: #0051db;
+	border-radius: 3px;
+}
+.navbar-brand img {
+	width: 50px;
+	height: 50px;
+}
+
+/***** About *****/
+
+.about-container {
+	width: 100%;
+	height: calc(100vh - 100px);
+	display: grid;
+	place-items: center;
+	color: white;
+}
+.about-section {
+	width: 100%;
+	height: auto;
+	display: grid;
+	place-items: center;
+}
+.fl-image img {
+	width: 200px;
+	height: 200px;
+}
+.about-section h2 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	font-size: 4rem;
+}
+.about-section p {
+	font-size: 1.5rem;
+	padding-left: 12rem;
+	padding-right: 12rem;
+}
+@media only screen and (max-width: 768px) { /*ipad*/
+	.about-section h2, .about-section p {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
